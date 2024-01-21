@@ -51,7 +51,126 @@ span {
 /* COMMON STYLES */
 
 .orange-btn {
+    margin-top: 60px;
     border-radius: 4px;
     border: 2px solid #F66437;
     padding: 22px 60px;
+    color: #FA6334;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 139.9%;
+}
+
+/* PROMO SECTION */
+
+.promo {
+    height: 1587px;
+    padding-top: 174px;
+    background: url(../img/promo/promo-bg.png) center / cover no-repeat;
+    position: relative;
+}
+
+.promo-title {
+    color: #FFF;
+    font-size: 85px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: 0.85px;
+}
+
+.promo-descr {
+    margin-top: 14px;
+    max-width: 589px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.promo-arrow {
+    margin-top: 204px;
+    display: block;
+}
+
+.tasks {
+    position: absolute;
+    bottom: -105px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.tasks-title {
+    max-width: 981px;
+    color: #FFF;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 131%;
+    letter-spacing: 0.5px;
+}
+
+.tasks__list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.task__card {
+    max-width: 333px;
+    width: 100%;
+    min-height: 410px;
+    border-radius: 36px;
+    border: 1px solid #7D7D7D;
+    background: #272727;
+    padding: 20px;
+    display: block;
+}
+
+.task__card-title {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 141%;
+}
+
+.task__card-descr {
+    margin-top: 12px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.laptop__block {
+    position: absolute;
+    right: calc(100vw / 20);
+    top: 124px;
+    max-width: 50%;
+}
+
+.laptop {
+    max-width: 100%;
+}
+
+.laptop-link {
+    position: absolute;
+    bottom: 6px;
+    right: 20%;
+    max-width: 361px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(29px);
+    border-radius: 25px;
+    border: 1px solid #656565;
+    padding: 20px 22px 20px 40px;
+    color: var(--ffffff, #FFF);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.laptop-link a {
+    color: #DABA69;
+    font-weight: 700;
 }
