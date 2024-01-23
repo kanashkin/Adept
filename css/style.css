@@ -528,3 +528,74 @@ span {
     color: #DABA69;
     font-weight: 700;
 }
+
+
+/* PRESENTATION SECTION */
+
+.presentation {
+    margin-top: 160px;
+}
+
+.top {
+    position: relative;
+    height: 624px;
+    background: url(../img/presentation/top-bg.png) center / cover no-repeat;
+}
+
+.top__content {
+    display: flex;
+    justify-content:center;
+}
+
+.play {
+    width: 165.655px;
+    height: 161px;
+    position: absolute;
+    left: 47.5%;
+    bottom: 111px;
+    transform: translateX(-50%);
+    background: url(../img/presentation/play.png) center / contain no-repeat;
+    z-index: 2;
+}
+
+.presentation__info {
+    margin-top: 222px;
+    max-width: 479px;
+}
+
+.presentation__info-title {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 141%;
+}
+
+.presentation__info-descr {
+    margin-top: 20px;
+    color: #BDBDBD;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.iphone {
+    margin-top: 76px;
+}
+
+.bottom {
+    overflow: hidden;
+    height: 240px;
+    background: #DABA69;
+}
+
+.presentation-download {
+    display: block;
+    margin: 30px auto 0 auto;
+    width: fit-content;
+    transition: .4s all;
+}
+
+.presentation-download:hover {
+    background:  #F66437;
+    color: #fff;
+}
