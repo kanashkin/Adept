@@ -24,5 +24,10 @@ function scrollTasks() {
     })
 }
 
+const swiper = new Swiper('.clients-swiper', {
+    slidesPerView: 6,
+    loop: true
+});
+
 collapse()
 scrollTasks()

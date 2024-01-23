@@ -770,3 +770,30 @@ span {
     display: flex;
     gap: 14px;
 }
+
+/* CLIENTS SECTION */
+
+.clients {
+    margin-top: 120px;
+}
+
+.clients-title {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 141%;
+}
+
+.clients-swiper {
+    margin-top: 30px;
+}
+
+.clients-swiper .swiper-slide {
+    width: 292px !important;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
