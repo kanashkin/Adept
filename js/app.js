@@ -8,4 +8,21 @@ function collapse() {
     })
 }
 
+function scrollTasks() {
+    const triggers = document.querySelectorAll('.task__card')
+
+    triggers.forEach(function(item) {
+        item.addEventListener('click', function(event) {
+            event.preventDefault()
+            let id = item.getAttribute('href')
+            let block = document.querySelector(id)
+            block.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+            })
+        })
+    })
+}
+
 collapse()
+scrollTasks()

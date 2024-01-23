@@ -12,6 +12,10 @@
     background-repeat: no-repeat;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 input {
     width: 100%;
 }
@@ -185,6 +189,42 @@ span {
 
 .work {
     padding-top: 310px;
+    position: relative;
+}
+
+.mask, .points {
+    z-index: -1;
+    position: absolute;
+}
+
+.mask-1 {
+    right: -10px;
+    top: -175px;
+}
+
+.mask-2 {
+    left: 0;
+    top: 1135px;
+}
+
+.mask-3 {
+    right: 0;
+    top: 2758px;
+}
+
+.mask-4 {
+    left: -20%;
+    top: 500px;
+}
+
+.points-1 {
+    left: -142px;
+    top: 1071px;
+}
+
+.points-2 {
+    top: 3249px;
+    right: 0;
 }
 
 .work-icon {
@@ -201,6 +241,8 @@ span {
 }
 
 .work__items {
+    position: relative;
+    z-index: 2;
     margin-top: 227px;
 }
 
@@ -462,6 +504,7 @@ span {
 /* ADDITIONAL BLOCK */
 
 .additional {
+    position: relative;
     margin-bottom: 160px;
 }
 
