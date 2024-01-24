@@ -231,6 +231,30 @@ span {
     }
 }
 
+@media (max-width: 999px) {
+    .promo {
+        padding-top: 100px;
+    }
+    .promo-title {
+        font-size: 52px;
+    }
+    .promo-descr {
+        margin-top: 20px;
+        max-width: 80%;
+    }
+    .laptop__block {
+        top: 500px;
+        width: 90%;
+        max-width: 90%;
+    }
+    .promo-arrow {
+        margin-top: 500px;
+    }
+    .tasks-title {
+        font-size: 32px;
+    }
+}
+
 /* WORK SECTION */
 
 .work {
@@ -296,6 +320,7 @@ span {
 .work__item {
     display: flex;
     justify-content: space-between;
+    width: fit-content;
 }
 
 .work__info {
@@ -379,6 +404,12 @@ span {
     }
 }
 
+@media(max-width: 999px) {
+    .work {
+        padding-top: 355px;
+    }
+}
+
 /* STYLES OF 1st WORK ITEM */
 
 .work__item:nth-child(1) {
@@ -413,6 +444,22 @@ span {
     }
     .work__item:nth-child(1) .work__show-text {
         top: 731px;
+    }
+}
+
+@media (max-width: 999px) {
+    .work__item:nth-child(1) {
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 120px;
+    }
+    .work__item:nth-child(1) .work__show-img {
+        position: static;
+        max-width: 100%;
+    }
+    .work__item:nth-child(1) .work__show-text {
+        left: 10px;
+        top: 485px;
     }
 }
 
@@ -454,6 +501,27 @@ span {
     }
 }
 
+@media (max-width: 999px) {
+    .work__item:nth-child(2) {
+        flex-direction: column;
+        gap: 60px;
+        margin-bottom: 100px;
+    }
+    .work__item:nth-child(2) .work__show-img {
+        position: static;
+        max-width: 100%;
+    }
+    .work__item:nth-child(2) .work__show {
+        padding-left: 103px;
+        order: 2;
+    }
+    .work__item:nth-child(2) .work__show-text {
+        right: 10px;
+        left: auto;
+        top: 500px;
+    }
+}
+
 /* STYLES OF 3rd WORK ITEM */
 
 .work__item:nth-child(3) {
@@ -473,6 +541,23 @@ span {
 @media (max-width: 1339px) {
     .work__item:nth-child(3) {
         margin-bottom: 196px;
+    }
+    .work__item:nth-child(3) {
+        justify-content: space-between;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 999px) {
+    .work__item:nth-child(3) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 29px;
+        margin-bottom: 120px;
+        padding-left: 103px;
+    }
+    .work__item:nth-child(3) .work__info-text {
+        order: -1;
     }
     .work__item:nth-child(3) {
         justify-content: space-between;
