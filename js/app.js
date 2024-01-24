@@ -25,8 +25,13 @@ function scrollTasks() {
 }
 
 const swiper = new Swiper('.clients-swiper', {
-    slidesPerView: 6,
-    loop: true
+    slidesPerView: 4,
+    loop: true,
+    breakpoints: {
+        1340: {
+            slidesPerView: 6,
+        }
+    }
 });
 
 collapse()
