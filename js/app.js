@@ -3,6 +3,12 @@ function collapse() {
 
     triggers.forEach(function(item) {
         item.addEventListener('click', function() {
+            let answer = item.nextElementSibling
+            if (item.closest('.faq__block').classList.contains('active')) {
+                answer.style.height = ''
+            } else {
+                answer.style.height = answer.scrollHeight + 'px'
+            }
             item.closest('.faq__block').classList.toggle('active')
         })
     })

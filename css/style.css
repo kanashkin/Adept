@@ -1639,14 +1639,17 @@ span {
 }
 
 .faq__answer {
+    display: flex;
+    height: 0;
     gap: 38px;
     max-width: 95%;
-    display: none;
-    padding-bottom: 20px;
+    opacity: 0;
+    transition: .6s ease;
 }
 
 .faq__block.active .faq__answer {
-    display: flex;
+    opacity: 1;
+    margin-bottom: 20px;
 }
 
 .faq__answer__block {
