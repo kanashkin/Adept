@@ -188,7 +188,7 @@
                         </div>
                     </div>
                     <div class="work__item" style="flex-direction: column;">
-                        <div class="work__info" style="align-items: center;">
+                        <div class="work__info" style="align-items: center; flex-direction: row;">
                             <div class="work-icon">
                                 <img src="img/work/items-icons/06.png" alt="">
                             </div>
@@ -200,7 +200,7 @@
                             <div class="show__item">
                                 <img class="show__item-img" src="img/work/items-photos/07-1.png" alt="">
                                 <div class="work__info-text">
-                                    <h3 class="work__info-title">Метки с замечаниями на чертежах <span class="status">В разработке</span></h3>
+                                    <h3 class="work__info-title">Метки с замечаниями <br> на чертежах <span class="status">В разработке</span></h3>
                                     <p class="work__info-descr">
                                         Представители строительного контроля могут делать метки с замечаниями прямо на чертежах. Система поддерживает графические форматы.jpeg, .bmp, .jpe, .jpg, .png, .gif. В будущем можно будет загружать чертежи в формате dwf.
                                     </p>
@@ -218,7 +218,7 @@
                             <div class="show__item">
                                 <img class="show__item-img" src="img/work/items-photos/07-3.png" alt="">
                                 <div class="work__info-text">
-                                    <h3 class="work__info-title">Согласование <br> документов</h3>
+                                    <h3 class="work__info-title">Согласование документов</h3>
                                     <p class="work__info-descr">
                                         Возможность проводить согласования прямо на строительном объекте с мобильного приложения
                                     </p>
@@ -348,9 +348,11 @@
         <section class="meet">
             <div class="container">
                 <div class="meet__wrapper">
-                    <h2 class="meet-title">Обсудить возможность реализации ваших задач</h2>
-                    <p class="meet-descr">Сделайте ещё один шаг на пути цифровой трансформации</p>
-                    <button class="orange-btn meet-btn">Заказать встречу</button>
+                    <div>
+                        <h2 class="meet-title">Обсудить возможность реализации ваших задач</h2>
+                        <p class="meet-descr">Сделайте ещё один шаг на пути цифровой трансформации</p>
+                        <button class="orange-btn meet-btn">Заказать встречу</button>
+                    </div>
                     <img class="meet-iphones" src="img/meet/iPhones.png" alt="iphones img">
                     <div class="stores">
                         <a class="google" href=""><img src="img/meet/google.svg" alt=""></a>
@@ -437,26 +439,38 @@
             <div class="container">
                 <h2 class="price-title">Цены</h2>
                 <h3 class="price-subtitle">с гарантией 12 мес лицензионного обслуживания</h3>
-                <ul class="table__header">
-                    <li class="table__header-item"> 1 Раб. место</li>
-                    <li class="table__header-item">пакет до <br> 5 раб. мест</li>
-                    <li class="table__header-item">пакет до <br> 50 раб. мест</li>
-                    <li class="table__header-item">пакет до <br> 100 раб. мест</li>
-                    <li class="table__header-item">пакет до <br> 300 раб. мест </li>
-                    <li class="table__header-item">пакет до <br> 500 раб. мест </li>
-                    <li class="table__header-item">пакет до <br> 1000 раб. мест </li>
-                </ul>
-                <div class="table__body__wrapper">
-                    <ul class="table__body">
-                        <li class="table__body-item">-</li>
-                        <li class="table__body-item">100 000</li>
-                        <li class="table__body-item">995 000</li>
-                        <li class="table__body-item">1 750 000</li>
-                        <li class="table__body-item">3 750 000</li>
-                        <li class="table__body-item">5 000 000</li>
-                        <li class="table__body-item">7 500 000</li>
-                    </ul>
-                    <button class="orange-btn table-btn">Заказать</button>
+                <div class="table">
+                    <div class="table__wrapper">
+                        <div class="table__item">
+                            <div class="table__item-header">1 Раб. место</div>
+                            <div class="table__item-body">-</div>
+                        </div>
+                        <div class="table__item">
+                            <div class="table__item-header">пакет до <br> 5 раб. мест</div>
+                            <div class="table__item-body">100 000</div>
+                        </div>
+                        <div class="table__item">
+                            <div class="table__item-header">пакет до <br> 50 раб. мест</div>
+                            <div class="table__item-body">995 000</div>
+                        </div>
+                        <div class="table__item">
+                            <div class="table__item-header">пакет до <br> 100 раб. мест</div>
+                            <div class="table__item-body">1 750 000</div>
+                        </div>
+                        <div class="table__item">
+                            <div class="table__item-header">пакет до <br> 300 раб. мест</div>
+                            <div class="table__item-body">3 750 000</div>
+                        </div>
+                        <div class="table__item">
+                            <div class="table__item-header">пакет до <br> 500 раб. мест</div>
+                            <div class="table__item-body">5 000 000</div>
+                        </div>
+                        <div class="table__item">
+                            <div class="table__item-header">пакет до <br> 1000 раб. мест</div>
+                            <div class="table__item-body">7 500 000</div>
+                        </div>
+                    </div>
+                    <button class="orange-btn price-btn">Заказать</button>
                 </div>
                 <p class="price__info">
                     <span>Свидетельство 2020616103</span> входит в Единый реестр российских программ для ЭВМ и БД Министерства цифрового развития, связи и массовых коммуникаций РФ (номер в реестре 8936)
