@@ -1730,6 +1730,7 @@ span {
 
 .clients-swiper {
     margin-top: 30px;
+    position: relative;
 }
 
 .clients-swiper .swiper-slide {
@@ -1739,6 +1740,44 @@ span {
     align-items: center;
     justify-content: center;
     border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.clients-swiper:hover .swiper__nav {
+    opacity: 1;
+    z-index: 2;
+}
+
+.swiper__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+    transition: .4s all;
+}
+
+.swiper-btn {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-btn:hover svg circle {
+    transition: .4s all;
+}
+
+.swiper-btn:hover svg circle {
+    fill: #4E719E;
+}
+
+.swiper-next {
+    position: absolute;
+    right: 10%;
+}
+
+.swiper-prev {
+    position: absolute;
+    left: 10%;
 }
 
 @media(max-width: 999px) {
@@ -1757,6 +1796,9 @@ span {
     .clients-title {
         font-size: 20px;
         padding: 0 30px;
+    }
+    .swiper__nav {
+        display: none;
     }
 }
 

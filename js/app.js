@@ -32,7 +32,13 @@ function scrollTasks() {
 
 const swiper = new Swiper('.clients-swiper', {
     slidesPerView: 4,
+    slidesPerGroup: 1,
+    speed: 600,
     loop: true,
+    navigation: {
+        prevEl: '.swiper-prev',
+        nextEl: '.swiper-next'
+    },
     breakpoints: {
         1340: {
             slidesPerView: 6,
