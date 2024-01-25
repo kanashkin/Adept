@@ -1199,6 +1199,9 @@ span {
     .additional-img img {
         max-width: 55%;
     }
+    .qr {
+        right: 30px;
+    }
 }
 
 /* CONNECT BLOCK */
@@ -1912,7 +1915,7 @@ span {
     }
 }
 
-@media(max-width: 379px) {
+@media(max-width: 479px) {
     .price-subtitle {
         font-size: 16px;
     }
