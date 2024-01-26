@@ -72,7 +72,8 @@ span {
     transition: .4s all;
 }
 
-.orange-btn:hover {
+.orange-btn:hover,
+.orange-btn.active {
     background:  #F66437;
     color: #fff;
 }
@@ -1940,13 +1941,15 @@ span {
     justify-content: space-between;
 }
 
+.table__item:last-child button,
 .table__item:last-child div {
     padding-right: 0;
     margin-right: 0;
 }
 
 .price-btn {
-    margin-top: 40px;
+    display: block;
+    margin: 40px 0 0 auto;
     padding: 11px 49px;
     font-size: 16px;
 }
@@ -1965,6 +1968,7 @@ span {
 }
 
 .table__item-body {
+    display: block;
     margin-right: 24px;
     margin-top: 20px;
     border-radius: 54px;
@@ -1974,9 +1978,12 @@ span {
     font-weight: 800;
     line-height: 150%;
     height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: .4s all;
+}
+
+.table__item-body:hover,
+.table__item-body:focus {
+    border: 1px solid #F66437;
 }
 
 .price__info {

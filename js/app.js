@@ -30,6 +30,19 @@ function scrollTasks() {
     })
 }
 
+function priceSelect() {
+    const triggers = document.querySelectorAll('.table__item-body')
+    const btn = document.querySelector('.price-btn')
+
+    triggers.forEach(item => {
+        item.addEventListener('click', function() {
+            btn.classList.add('active')
+        })
+    })
+}
+
+priceSelect()
+
 const swiper = new Swiper('.clients-swiper', {
     slidesPerView: 4,
     slidesPerGroup: 1,
