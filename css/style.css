@@ -104,11 +104,20 @@ span {
 }
 
 .promo-arrow {
+    position: relative;
+    z-index: 2;
     margin-top: 204px;
     display: block;
+    transition: .3s all;
+    cursor: pointer;
+}
+
+.promo-arrow:hover {
+    transform: translateY(20%);
 }
 
 .tasks {
+    z-index: 2;
     position: absolute;
     bottom: -105px;
     left: 50%;
@@ -141,6 +150,29 @@ span {
     background: #272727;
     padding: 20px;
     display: block;
+    transition: .4s all;
+}
+
+.task__card-photo.active {
+    display: none;
+}
+
+.task__card:hover .task__card-photo.active {
+    display: block;
+}
+
+.task__card:hover .task__card-photo.unactive {
+    display: none;
+}
+
+.task__card:hover {
+    border: 1px solid #DABA69;
+    background: linear-gradient(149deg, #DABA69 -11.6%, #AB8933 114.25%);
+}
+
+.task__card:hover .task__card-title,
+.task__card:hover .task__card-descr {
+    color: #000;
 }
 
 .task__card-title {
@@ -180,15 +212,28 @@ span {
     border-radius: 25px;
     border: 1px solid #656565;
     padding: 20px 22px 20px 40px;
-    color: var(--ffffff, #FFF);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
 }
 
 .laptop-link a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    display: block;
+}
+
+.laptop-link a:hover span {
+    border-bottom: 1px solid #fff;
+    transition: .3s all;
+}
+
+.laptop-link .gold {
     color: #DABA69;
     font-weight: 700;
+}
+
+.laptop-link a:hover .gold {
+    border-bottom: 1px solid #DABA69;
 }
 
 @media (max-width: 1439px) {
@@ -710,6 +755,11 @@ span {
     max-width: 526px;
 }
 
+.work__item:nth-child(3) img {
+    border-radius: 20px;
+    box-shadow: 0px 8.347px 16.695px 0px rgba(50, 50, 71, 0.06), 0px 0px 8.347px 0px rgba(50, 50, 71, 0.13);
+}
+
 @media (max-width: 1339px) {
     .work__item:nth-child(3) {
         margin-bottom: 196px;
@@ -808,7 +858,7 @@ span {
         gap: 30px;
     }
     .work__item:nth-child(4) .work__show-img {
-        max-width: 60%;
+        max-width: 50%;
     }
     .work__item:nth-child(4) .work__show-img:nth-child(2) {
         margin-top: 0;
@@ -897,7 +947,7 @@ span {
 
 @media(max-width: 479px) {
     .work__item:nth-child(6) .work__show-img {
-        max-width: 60%;
+        max-width: 50%;
     }
 }
 
@@ -981,6 +1031,9 @@ span {
     .work__show__items {
         padding-left: 0;
     }
+    .work__item:nth-child(7) .bg {
+        display: none;
+    }
 }
 
 @media(max-width: 767px) {
@@ -998,7 +1051,7 @@ span {
         max-width: 100%;
     }
     .show__item-img {
-        max-width: 100%;
+        max-width: 60%;
         object-fit: contain;
     }
 }
@@ -1129,7 +1182,7 @@ span {
     position: relative;
     height: fit-content;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .qr {
@@ -1174,7 +1227,7 @@ span {
     }
     .additional__items {
         flex-direction: column;
-        gap: 40px;
+        gap: 60px;
     }
     .qr {
         width: 130px;
@@ -1182,8 +1235,11 @@ span {
         bottom: -20px;
         right: -10px;
     }
+    .additional-img {
+        justify-content: center;
+    }
     .additional-img img {
-        max-width: 100%;
+        max-width: 80%;
         object-fit: contain;
     }
 }
@@ -1193,14 +1249,12 @@ span {
         width: 73px;
         height: 73px;
     }
-    .additional-img {
-        justify-content: center;
+    .qr {
+        right: 30px;
     }
     .additional-img img {
         max-width: 55%;
-    }
-    .qr {
-        right: 30px;
+        object-fit: contain;
     }
 }
 
@@ -1307,6 +1361,11 @@ span {
     transform: translateX(-50%);
     background: url(../img/presentation/play.png) center / contain no-repeat;
     z-index: 2;
+    transition: .4s all;
+}
+
+.play:hover {
+    background: url(../img/presentation/play-active.png) center / contain no-repeat;
 }
 
 .presentation__info {
@@ -1846,7 +1905,8 @@ span {
 
 .table__wrapper {
     display: grid;
-    grid-template-columns: repeat(7, 164px);
+    grid-template-columns: repeat(7, auto);
+    column-gap: 0;
     row-gap: 30px;
 }
 
@@ -1860,7 +1920,6 @@ span {
 .table__item:last-child div {
     padding-right: 0;
     margin-right: 0;
-    width: 140px;
 }
 
 .price-btn {
