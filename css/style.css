@@ -1817,7 +1817,6 @@ span {
 }
 
 .clients-swiper .swiper-slide {
-    width: 292px !important;
     height: 91px;
     display: flex;
     align-items: center;
@@ -1868,7 +1867,6 @@ span {
         margin-top: 100px;
     }
     .clients-swiper .swiper-slide {
-        width: 242px !important;
         height: 75px;
     }
     .clients-swiper .swiper-slide img {
@@ -1890,7 +1888,6 @@ span {
         margin-top: 80px;
     }
     .clients-swiper .swiper-slide {
-        width: 163px !important;
         height: 51px;
     }
     .clients-title {
