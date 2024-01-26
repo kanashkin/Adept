@@ -148,26 +148,49 @@ span {
     border-radius: 36px;
     border: 1px solid #7D7D7D;
     background: #272727;
+    background: #272727;
     padding: 20px;
     display: block;
     transition: .4s all;
 }
 
-.task__card-photo.active {
-    display: none;
+.task__card-photo {
+    width: 53px;
+    height: 53px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.task__card:hover .task__card-photo.active {
-    display: block;
+.task__card:nth-child(1) .task__card-photo {
+    background-image: url(../img/promo/tasks/01.svg);
+}
+.task__card:nth-child(2) .task__card-photo {
+    background-image: url(../img/promo/tasks/02.svg);
+}
+.task__card:nth-child(3) .task__card-photo {
+    background-image: url(../img/promo/tasks/03.svg);
+}
+.task__card:nth-child(4) .task__card-photo {
+    background-image: url(../img/promo/tasks/04.svg);
 }
 
-.task__card:hover .task__card-photo.unactive {
-    display: none;
+.task__card:nth-child(1):hover .task__card-photo{
+    background-image: url(../img/promo/tasks/01-black.svg);
+}
+.task__card:nth-child(2):hover .task__card-photo {
+    background-image: url(../img/promo/tasks/02-black.svg);
+}
+.task__card:nth-child(3):hover .task__card-photo {
+    background-image: url(../img/promo/tasks/03-black.svg);
+}
+.task__card:nth-child(4):hover .task__card-photo {
+    background-image: url(../img/promo/tasks/04-black.svg);
 }
 
 .task__card:hover {
     border: 1px solid #DABA69;
-    background: linear-gradient(149deg, #DABA69 -11.6%, #AB8933 114.25%);
+    background: #DABA69;
 }
 
 .task__card:hover .task__card-title,
@@ -1972,14 +1995,6 @@ span {
     .price-title {
         font-size: 36px;
     }
-    .table__wrapper {
-        grid-template-columns: repeat(7, 137px);
-    }
-    
-    .table__item:last-child div {
-        width: 117px;
-    }
-    
     .table__item-header {
         padding: 10px 0;
         padding-right: 20px;
@@ -1993,7 +2008,7 @@ span {
 
 @media (max-width: 999px) {
     .table__wrapper {
-        grid-template-columns: repeat(4, 137px);
+        grid-template-columns: repeat(4, auto);
     }
     .price {
         margin-top: 100px;
@@ -2009,7 +2024,7 @@ span {
         font-size: 28px;
     }
     .table__wrapper {
-        grid-template-columns: repeat(3, 137px);
+        grid-template-columns: repeat(3, auto);
     }
     .price__info {
         font-size: 12px;
@@ -2021,6 +2036,6 @@ span {
         font-size: 16px;
     }
     .table__wrapper {
-        grid-template-columns: repeat(2, 137px);
+        grid-template-columns: repeat(2, auto);
     }
 }
