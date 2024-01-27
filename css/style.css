@@ -407,9 +407,18 @@ span {
     position: absolute;
 }
 
+.mask-mobile {
+    display: none;
+}
+
 .mask-1 {
     right: 0px;
     top: -175px;
+}
+
+.mask-1-mobile {
+    right: 0px;
+    top: 118px;
 }
 
 .mask-2 {
@@ -417,15 +426,38 @@ span {
     top: 1135px;
 }
 
+.mask-2-mobile {
+    left: 0;
+    top: 1428px;
+}
+
 .mask-3 {
     right: 0;
     top: 2758px;
+}
+
+.mask-3-mobile {
+    right: 1px;
+    top: 2898px;
 }
 
 .mask-4 {
     max-width: 100%;
     left: -20%;
     top: 500px;
+}
+
+.mask-4 {
+    max-width: 100%;
+    left: -20%;
+    top: 500px;
+}
+
+.mask-4-mobile {
+    max-width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 240px;
 }
 
 .points-1 {
@@ -540,6 +572,12 @@ span {
     }
     .work__items {
         margin-top: 80px;
+    }
+    .mask {
+        display: none;
+    }
+    .mask-mobile {
+        display: block;
     }
 }
 
